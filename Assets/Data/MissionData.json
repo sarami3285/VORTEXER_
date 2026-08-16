@@ -1,0 +1,331 @@
+﻿{
+  "missions": [
+    {
+      "id": 0,
+      "name": "Mission 1: Training Run",
+      "prev_mission_ids": [],
+      "map_x": 600,
+      "map_y": 450,
+      "description": "「殲滅ミッション」\n武装勢力が蜂起し街区を占領している。\n敵を掃討し周辺地域を制圧せよ",
+      "icon_path": "Assets/Demo1.png",
+      "map_width": 2000,
+      "map_height": 2000,
+      "playerPos": {
+        "x": 512.0,
+        "y": 384.0
+      },
+      "rewards": {
+        "BaseCredits": 2500,
+        "BonusMultiplier": 1.0
+      },
+      "map_tile_config": {
+        "tileset_texture": "Assets/MapTile.png",
+        "tile_size": 540,
+        "tile_set_rows": 3,
+        "tile_type": "City"
+      },
+      "target_type": "Elimination",
+      "enemy_configs": [
+        {
+          "type": "LowLevelEnemy",
+          "count": 6,
+          "min_dist": 100,
+          "max_dist": 500
+        },
+        {
+          "type": "DroneGuard",
+          "count": 3,
+          "min_dist": 500,
+          "max_dist": 1000
+        }
+      ],
+      "reinforcements": [
+        {
+          "time": 15.0,
+          "type": "LowLevelEnemy",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Mission 2: Sentry Challenge",
+      "prev_mission_ids": [ 0 ],
+      "map_x": 500,
+      "map_y": 350,
+      "description": "「破壊ミッション」\n敵の前線補給基地を強襲し、\n燃料集積庫を破壊せよ。",
+      "icon_path": "Assets/Demo2.png",
+      "map_width": 3072,
+      "map_height": 2304,
+      "playerPos": {
+        "x": 512.0,
+        "y": 384.0
+      },
+      "rewards": {
+        "BaseCredits": 3000,
+        "BonusMultiplier": 1.0
+      },
+      "map_tile_config": {
+        "tileset_texture": "Assets/MapTile01.png",
+        "tile_size": 540,
+        "tile_set_rows": 3,
+        "tile_type": "Desert"
+      },
+      "target_type": "Destruction",
+      "target_configs": [
+        {
+          "type": "Generator",
+          "position": [ 2000, 1800 ],
+          "hp": 500,
+          "texture": "Assets/EnergyBuild.png"
+        }
+      ],
+      "enemy_configs": [
+        {
+          "type": "SentryGun",
+          "count": 2,
+          "positions": [
+            [ 1750, 2050 ],
+            [ 2250, 1550 ]
+          ]
+        },
+        {
+          "type": "RocketTurret",
+          "count": 1,
+          "positions": [
+            [ 2500, 2000 ]
+          ]
+        },
+        {
+          "type": "LowLevelEnemy",
+          "count": 13
+        },
+        {
+          "type": "EnemyBase",
+          "count": 1,
+          "positions": [
+            [ 1500, 2200 ]
+          ]
+        }
+      ],
+      "reinforcements": [
+        {
+          "time": 15.0,
+          "type": "LowLevelEnemy",
+          "count": 2
+        },
+        {
+          "time": 30.0,
+          "type": "LowLevelEnemy",
+          "count": 3
+        },
+        {
+          "time": 45.0,
+          "type": "DroneGuard",
+          "count": 2
+        },
+        {
+          "time": 45.0,
+          "type": "LowLevelEnemy",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mission 2: Sentry Challenge",
+      "prev_mission_ids": [ 2 ],
+      "map_x": 400,
+      "map_y": 250,
+      "description": "「殲滅ミッション」\n沖合の海域にて敵の艦隊を補足した。\nこれらを討滅せよ。",
+      "icon_path": "Assets/Demo4.png",
+      "map_width": 4096,
+      "map_height": 3072,
+      "playerPos": {
+        "x": 512.0,
+        "y": 384.0
+      },
+      "rewards": {
+        "BaseCredits": 6500,
+        "BonusMultiplier": 1.0
+      },
+      "map_tile_config": {
+        "tileset_texture": "Assets/MapTile02.png",
+        "tile_size": 540,
+        "tile_set_rows": 3,
+        "tile_type": "Ocean"
+      },
+      "target_type": "Elimination",
+      "enemy_configs": [
+        {
+          "type": "DroneGuard",
+          "count": 5
+        },
+        {
+          "type": "Formation",
+          "formation_type": "OvalScreen",
+          "center_position": [ 2000, 1000 ],
+          "main_ship_type": "BattleShip",
+          "guard_details": [
+            {
+              "guard_ship_type": "BattleShip",
+              "guard_count": 2,
+              "radius_ratio": 2.0
+            },
+            {
+              "guard_ship_type": "DroneGuard",
+              "guard_count": 8,
+              "radius_ratio": 1.0
+            }
+          ],
+          "radius_x": 200,
+          "radius_y": 400,
+          "formation_rotation": 0.0
+        }
+      ],
+      "reinforcements": [
+        {
+          "time": 25.0,
+          "type": "DroneGuard",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Mission 3: Target Destruction",
+      "prev_mission_ids": [ 3 ],
+      "map_x": 200,
+      "map_y": 150,
+      "description": "「殲滅ミッション」\n敵の大型武装戦闘機、\n及び周囲の敵を殲滅せよ",
+      "icon_path": "Assets/Tank1.png",
+      "map_width": 4096,
+      "map_height": 3072,
+      "playerPos": {
+        "x": 512.0,
+        "y": 384.0
+      },
+      "rewards": {
+        "BaseCredits": 1000,
+        "BonusMultiplier": 1.0
+      },
+      "map_tile_config": {
+        "tileset_texture": "Assets/MapTile.png",
+        "tile_size": 540,
+        "tile_set_rows": 3,
+        "tile_type": "City"
+      },
+      "target_type": "Elimination",
+      "enemy_configs": [
+        {
+          "type": "DroneGuard",
+          "count": 7
+        },
+        {
+          "type": "Boss_Heri",
+          "count": 1,
+          "min_dist": 500,
+          "max_dist": 1000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mission 4: Base Defense",
+      "prev_mission_ids": [1],
+      "map_x": 600,
+      "map_y": 150,
+      "description": "「防衛ミッション」\n友軍部隊とともに\n前線基地を2分間防衛せよ",
+      "icon_path": "Assets/Demo5.png",
+      "map_width": 3072,
+      "map_height": 2304,
+      "playerPos": {
+        "x": 1536.0,
+        "y": 1350.0
+      },
+      "rewards": {
+        "BaseCredits": 1000,
+        "BonusMultiplier": 1.0
+      },
+      "map_tile_config": {
+        "tileset_texture": "Assets/MapTile.png",
+        "tile_size": 540,
+        "tile_set_rows": 3,
+        "tile_type": "City"
+      },
+      "target_type": "Defense",
+      "defense_target": {
+        "type": "Core",
+        "position": [ 1536, 1152 ],
+        "hp": 1000
+      },
+      "defense_duration": 180.0,
+      "enemy_configs": [
+        {
+          "type": "SentryGun",
+          "count": 1,
+          "positions": [
+            [ 300, 400 ],
+            [ 2772, 1904 ]
+          ]
+        },
+        {
+          "type": "DroneGuard",
+          "count": 10
+        },
+        {
+          "type": "EnemyBase",
+          "count": 1,
+          "positions": [
+            [ 200, 200 ],
+            [ 200, 2104 ],
+            [ 2872, 200 ],
+            [ 2872, 2104 ]
+          ]
+        }
+      ],
+      "ally_configs": [
+        {
+          "type": "AllyTank",
+          "count": 9,
+          "positions": [
+            [ 1636, 1252 ],
+            [ 1436, 1052 ]
+          ],
+          "initial_mode": "Attack"
+        },
+        {
+          "type": "AllyTurret",
+          "count": 2,
+          "fixed_positions": [
+            [ 1836, 1352 ],
+            [ 1236, 952 ]
+          ],
+          "initial_mode": "Attack"
+        }
+      ],
+      "reinforcements": [
+        {
+          "time": 24.0,
+          "type": "DroneGuard",
+          "count": 2
+        },
+        {
+          "time": 48.0,
+          "type": "DroneGuard",
+          "count": 2
+        },
+        {
+          "time": 72.0,
+          "type": "DroneGuard",
+          "count": 2
+        },
+        {
+          "time": 96.0,
+          "type": "DroneGuard",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

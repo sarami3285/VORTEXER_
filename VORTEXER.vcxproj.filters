@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Enemy">
+      <UniqueIdentifier>{a56ea32b-78e4-4573-a9c9-6da6b854028c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\EnemyComponent">
+      <UniqueIdentifier>{d92b1116-298e-42c1-b2e7-bb8821f9935c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Ally">
+      <UniqueIdentifier>{cca0235f-9d30-4064-8710-df978b8a5830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\AllyComponent">
+      <UniqueIdentifier>{08ff14e6-1d31-4fe2-9987-23f0d641f506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Skill">
+      <UniqueIdentifier>{07d4706d-55d1-4181-89e2-1e5aa54625d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System">
+      <UniqueIdentifier>{a8fab2f0-790f-4c42-a114-ed8822f1140d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Debug">
+      <UniqueIdentifier>{35ac885b-9981-4eac-b49a-ebcb0c804f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\UI">
+      <UniqueIdentifier>{0e9b8394-d77e-42bf-a341-efdc7a4c50c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\UI\MiniMap">
+      <UniqueIdentifier>{228d89be-8c1f-4b95-893d-369cd1458b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Audio">
+      <UniqueIdentifier>{3fa3712a-cf80-4793-ba8e-f2ef94fcdac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Effect">
+      <UniqueIdentifier>{de574a4e-8e2d-4114-a340-507f3a9a340b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\HP">
+      <UniqueIdentifier>{9b6cdef5-7ce9-4284-bff3-dd621203d55b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\PlayerWeapons">
+      <UniqueIdentifier>{3907eb19-fa01-4bf8-876c-00d00e2f96bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Player">
+      <UniqueIdentifier>{6c700a3c-fd9f-4139-a98b-81b2dc4bcb74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Enemy\EnemyChildClasses">
+      <UniqueIdentifier>{09f8fdaf-80b7-400d-bc4b-5194f5f14442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GenericComponent">
+      <UniqueIdentifier>{229f6a46-ac7e-4b66-9ef3-c98560abe0f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteSheet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBehaviorComponent.h">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyStateComponent.h">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PatrolComponent.h">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="RangeAttackComponent.h">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="OrbitAttackComponent.h">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="MissionDataLoader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetActor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AllyAIComponent.h">
+      <Filter>ソース ファイル\AllyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="AllyUnit.h">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClInclude>
+    <ClInclude Include="PassiveSkill.h">
+      <Filter>ソース ファイル\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="ActiveSkill.h">
+      <Filter>ソース ファイル\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillComponent.h">
+      <Filter>ソース ファイル\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="MetalFragment.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="UpgradeData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="HighSpeedPassComponent.h">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="MissileBarrageSkill.h">
+      <Filter>ソース ファイル\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="DroneDeploySkill.h">
+      <Filter>ソース ファイル\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.h">
+      <Filter>ソース ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="AllyBuilding.h">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClInclude>
+    <ClInclude Include="AllyDrone.h">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClInclude>
+    <ClInclude Include="AllyTank.h">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClInclude>
+    <ClInclude Include="AllyFighter.h">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClInclude>
+    <ClInclude Include="AllyTurret.h">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClInclude>
+    <ClInclude Include="ArtilleryAttack.h">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetIndicatorComponent.h">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PulseBarrier.h">
+      <Filter>ソース ファイル\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="BlinkingTextComponent.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniMapComponent.h">
+      <Filter>ソース ファイル\UI\MiniMap</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniMapSpriteComponent.h">
+      <Filter>ソース ファイル\UI\MiniMap</Filter>
+    </ClInclude>
+    <ClInclude Include="WhiteFadeIn.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIButton.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollItemComponent.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioComponent.h">
+      <Filter>ソース ファイル\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="DustEffect.h">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Debris.h">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="SortieEffect.h">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyFragment.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="HPBarComponent.h">
+      <Filter>ソース ファイル\HP</Filter>
+    </ClInclude>
+    <ClInclude Include="HPComponent.h">
+      <Filter>ソース ファイル\HP</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleActor.h">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleShip.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss_Heri.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss_Tank.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DroneGuard.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBase.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Interceptor.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="LowLevelEnemy.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="RocketAttack.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="RocketTurret.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="SentryGun.h">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyAIComponent.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBullet.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyMissile.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponData.h">
+      <Filter>ソース ファイル\PlayerWeapons</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponComponent.h">
+      <Filter>ソース ファイル\PlayerWeapons</Filter>
+    </ClInclude>
+    <ClInclude Include="HUDSpriteComponent.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="HUDActor.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Missile.h">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="DeathEnemy.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletComponent.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraComponent.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionComponent.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="InputComponent.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="LineComponent.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="LockOnComponent.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveComponent.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteComponent.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMapComponent.h">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyFactory.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClInclude Include="Actor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClCompile Include="Actor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteSheet.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="PatrolComponent.cpp">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="RangeAttackComponent.cpp">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBehaviorComponent.cpp">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="OrbitAttackComponent.cpp">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyStateComponent.cpp">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="MissionDataLoader.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetActor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AllyAIComponent.cpp">
+      <Filter>ソース ファイル\AllyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="AllyUnit.cpp">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillComponent.cpp">
+      <Filter>ソース ファイル\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="MetalFragment.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="HighSpeedPassComponent.cpp">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="AllyBuilding.cpp">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClCompile>
+    <ClCompile Include="AllyDrone.cpp">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClCompile>
+    <ClCompile Include="AllyTank.cpp">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClCompile>
+    <ClCompile Include="AllyFighter.cpp">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClCompile>
+    <ClCompile Include="AllyTurret.cpp">
+      <Filter>ソース ファイル\Ally</Filter>
+    </ClCompile>
+    <ClCompile Include="ArtilleryAttack.cpp">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetIndicatorComponent.cpp">
+      <Filter>ソース ファイル\EnemyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="BlinkingTextComponent.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniMapComponent.cpp">
+      <Filter>ソース ファイル\UI\MiniMap</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniMapSpriteComponent.cpp">
+      <Filter>ソース ファイル\UI\MiniMap</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteFadeIn.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="UIManager.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIButton.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollItemComponent.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioComponent.cpp">
+      <Filter>ソース ファイル\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathEffect.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Debris.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="DustEffect.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClInclude Include="DeathEffect.h">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClInclude>
+    <ClCompile Include="SortieEffect.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyFragment.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HPBarComponent.cpp">
+      <Filter>ソース ファイル\HP</Filter>
+    </ClCompile>
+    <ClCompile Include="HPComponent.cpp">
+      <Filter>ソース ファイル\HP</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleActor.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleShip.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss_Heri.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss_Tank.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="DroneGuard.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBase.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Interceptor.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="LowLevelEnemy.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="RocketAttack.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="RocketTurret.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="SentryGun.cpp">
+      <Filter>ソース ファイル\Enemy\EnemyChildClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBullet.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyMissile.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponComponent.cpp">
+      <Filter>ソース ファイル\PlayerWeapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Missile.cpp">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathEnemy.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletComponent.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraComponent.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionComponent.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="InputComponent.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="LineComponent.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="LockOnComponent.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveComponent.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteComponent.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMapComponent.cpp">
+      <Filter>ソース ファイル\GenericComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyFactory.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VORTEXER.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\icon.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
